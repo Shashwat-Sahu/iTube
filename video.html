@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head><title>iTube</title>
+        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.12.0-web/css/all.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="video.css">
+     </head>
+    <body><header>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button id="menu" onclick="clickclose()"><i class="fas fa-bars"></i></button>
+        <button id="menu1" onclick="clickopen()"><i class="fas fa-bars"></i></button>
+            <img src="logo.png" id="logo"><div id="title">iTube<sup>IN</sup></div>
+            <div id="searchpad">
+            <form>
+            <input type="text" id="searching" name="searching" placeholder="Search" onkeyup="searchit()">
+                <button id="submit"><i class="fas fa-search"></i></button>
+            </form>
+                <div id="suggestion">
+                    <div id="search1"></div>
+                <div id="search2"></div>
+                <div id="search3"></div>
+                </div>
+            </div>
+            <div id="icon">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-th"></i>
+                <i class="fas fa-bell"></i></div>
+        </header>
+        <div id="sidebar">
+        <Ul>
+            <li style="background-color: #e9e9e9;color: black;"><i class="fas fa-home" class="side_icon" style="color: red;"></i>Home</li>
+            <li><i class="fab fa-gripfire" class="side_icon"></i>Trending</li>
+            </Ul>
+        </div>
+        <div id="main">
+        <div id="main_video">
+            <video id="video_content" controls></video><div id="title1"></div><br><br>
+            <div id="comment_section">
+                <h3>Comment</h3>
+            <div id="comment"></div>
+            <form id="form">
+                <input type="text" id="comment1" name="comment1" placeholder="Enter comment here" required><input type="submit" name="submit" onclick="comment_entry()" value="send">
+            </form>
+            <button id="edit" onclick="edit()">Edit</button>
+            </div></div>
+        <div id="side-video">
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 2</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <div id="element">
+                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+    </div>
+        </div>
+        
+        <script src="video.js"></script>
+    </body>
+</html>
