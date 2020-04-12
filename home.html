@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="fontawesome-free-5.12.0-web/css/all.css">
+<link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="header.css">
+     </head>
+    <body>
+        <header>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <button id="menu1" onclick="clickopen()"><i class="fas fa-bars"></i></button>
+            <button id="menu" onclick="clickclose()"><i class="fas fa-bars"></i></button>
+            <a href="home.html"><img src="logo.png" id="logo"><div id="title">iTube<sup>IN</sup></div></a>
+            <div id="searchpad">
+            <form>
+            <input type="text" id="searching" name="searching" placeholder="Search" onkeyup="searchit()">
+                <button id="submit"><i class="fas fa-search"></i></button>
+            </form>
+                <div id="suggestion">
+                    <div id="search1"></div>
+                <div id="search2"></div>
+                <div id="search3"></div>
+                </div>
+            </div>
+            <div id="icon">
+            <i class="fas fa-video"></i>
+            <i class="fas fa-th"></i>
+                <i class="fas fa-bell"></i></div>
+            
+        </header>
+        <div id="sidebar">
+            
+        <Ul>
+            <a href="home.html"><li style="background-color: #e9e9e9;color: black;"><i class="fas fa-home" class="side_icon" style="color: red;"></i>Home</li></a>
+            <li><i class="fab fa-gripfire" class="side_icon"></i>Trending</li>
+            </Ul>
+        </div>
+        <div id="main"><h2>Recommended</h2>
+            <a href="video.html" onclick="set('1');"><div class="video">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <video id="video1"></video><div id="video_footer"><img src="logo.png"><div id="name1"></div></div></div></a>
+            <a href="video.html" onclick="set('2');"><div class="video"><video id="video2"></video><div id="video_footer"><img src="logo.png"><div id="name2"></div></div></div></a>
+            <a href="video.html" onclick="set('3');"><div class="video"><video id="video3"></video><div id="video_footer"><img src="logo.png"><div id="name3"></div></div></div></a>
+            <a href="video.html" onclick="set('4');"><div class="video"><video id="video4"></video><div id="video_footer"><img src="logo.png"><div id="name4"></div></div></div></a>
+            <a href="video.html" onclick="set('5');"><div class="video"><video id="video5"></video><div id="video_footer"><img src="logo.png"><div id="name5"></div></div></div></a>
+            <a href="video.html" onclick="set('6');"><div class="video"><video id="video6"></video><div id="video_footer"><img src="logo.png"><div id="name6"></div></div></div></a>
+            <a href="video.html" onclick="set('7');"><div class="video"><video id="video7"></video><div id="video_footer"><img src="logo.png"><div id="name7"></div></div></div></a>
+            <a href="video.html" onclick="set('8');"><div class="video"><video id="video8"></video><div id="video_footer"><img src="logo.png"><div id="name8"></div></div></div></a>
+            <a href="video.html" onclick="set('9');"><div class="video"><video id="video9"></video><div id="video_footer"><img src="logo.png"><div id="name9"></div></div></div></a>
+            <a href="video.html" onclick="set('10');"><div class="video"><video id="video10"></video><div id="video_footer"><img src="logo.png"><div id="name10"></div></div></div></a>
+            <a href="video.html" onclick="set('11');"><div class="video"><video id="video11"></video><div id="video_footer"><img src="logo.png"><div id="name11"></div></div></div></a>
+            <a href="video.html" onclick="set('12');"><div class="video"><video id="video12"></video><div id="video_footer"><img src="logo.png"><div id="name12"></div></div></div></a>
+            <a href="video.html" onclick="set('13');"><div class="video"><video id="video13"></video><div id="video_footer"><img src="logo.png"><div id="name13"></div></div></div></a>
+            <a href="video.html" onclick="set('14');"><div class="video"><video id="video14"></video><div id="video_footer"><img src="logo.png"><div id="name14"></div></div></div></a>
+            <a href="video.html" onclick="set('15');"><div class="video"><video id="video15"></video><div id="video_footer"><img src="logo.png"><div id="name15"></div></div></div></a>
+            <a href="video.html" onclick="set('16');"><div class="video"><video id="video16"></video><div id="video_footer"><img src="logo.png"><div id="name16"></div></div></div></a>
+            <a href="video.html" onclick="set('17');"><div class="video"><video id="video17"></video><div id="video_footer"><img src="logo.png"><div id="name17"></div></div></div></a>
+        </div>
+    </body>
+    <script src="random.js"></script>
+    <script src="sidebar.js"></script>
+</html>
