@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel=stylesheet type="text/css" href="login.css">
+    <link rel=stylesheet type="text/css" href="background_matrix.css">
+    
+    <link rel="icon" href="logo.png">
+</head>
+<body>
+    <canvas id="c"></canvas>
+        <div id="login">
+            <div id="newleft" style="display: none">
+            <img src="logo.png">
+            <h2>Signup</h2>
+            <form action="/adddetails" method="post">
+                <div id="text"><label>Username</label><br>
+                <input type="text" name="usr" required></div><br>
+            <div id="email"><label>Email</label><br>
+                <input type="email" name="eml" required></div><br>
+                <div id="password"><label>Password</label><br>
+                    <input type="password" id="pass" name="pssd" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Password should be more than or equal to 8 characters and must contain lowercase alphabets,atleast one number"></div><br>
+                <div id="re-password"><label>Re-enter Password</label><br>
+                    <input type="password" id="repass" onkeyup="validate()" required>
+                </div><div id="checking"></div><br>
+                <input type="submit" value="Sign Up" id="submit">
+            </form>
+            </div>
+        <div id="left">
+        <img src="logo.png">
+            <h2>Login</h2>
+            <form method="post" action="/checkdetails">
+            <div id="email"><label>Username</label><br>
+                <input type="text" name="usr" required></div><br>
+                <div id="password"><label>Password</label><br>
+                    <input type="password" name="pssd" required></div>
+                <br>
+                <input type="submit" value="Login">
+            </form>
+            <p id="check"></p>
+        </div>
+        <span id="right" >
+            <img src="" id="image"><br>
+            <button id="signup" onclick="slideblock()">Sign Up</button>
+            <span id="text1">Stream Videos<br>A new world awaits for you.</span>
+            <span id="text2" >Add Comments<br>Give a feedback !!!</span>
+            <span id="text3" >Enjoy<br>and welcome aboard....</span>
+            </span>
+            <span id="new_right" style="display: none;">
+            <img src="" id="image1"><br>
+            <button id="signup" onclick="slideblock1()">Login</button>
+            <span id="text11">Stream Videos<br>A new world awaits for you.</span>
+            <span id="text21" >Add Comments<br>Give a feedback !!!</span>
+            <span id="text31" >Enjoy<br>and welcome aboard....</span>
+            </span>
+        </div>
+    
+    </body>
+    <script src="matrix.js"></script>
+    <script type="text/javascript" src="login.js">
+    </script>
+    
+</html>

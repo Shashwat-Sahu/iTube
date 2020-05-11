@@ -5,14 +5,49 @@
     <link rel="stylesheet" type="text/css" href="header.css">
     <link rel="stylesheet" type="text/css" href="video.css">
      </head>
-    <body><header>
+    <body>
+        <div id="load"></div>
+        <div id="waves">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+            <div class="bar7"></div>
+            <div class="bar8"></div>
+            <div class="bar9"></div>
+            <div class="bar10"></div>
+            <div class="bar11"></div>
+            <div class="bar12"></div>
+            <div class="bar13"></div>
+            <div class="bar14"></div>
+            <div class="bar15"></div>
+            <div class="bar16"></div>
+            <div class="bar17"></div>
+            <div class="bar18"></div>
+            <div class="bar19"></div>
+            <div class="bar20"></div>
+            <div class="bar21"></div>
+            <div class="bar22"></div>
+            <div class="bar23"></div>
+            <div class="bar24"></div>
+            <div class="bar25"></div>
+            <div class="bar26"></div>
+            <div class="bar27"></div>
+            <div class="bar28"></div>
+            <div class="bar29"></div>
+            <div class="bar30"></div>
+        </div>
+        <div id="afterload">
+        <!--<header>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             <button id="menu" onclick="clickclose()"><i class="fas fa-bars"></i></button>
         <button id="menu1" onclick="clickopen()"><i class="fas fa-bars"></i></button>
-            <img src="logo.png" id="logo"><div id="title">iTube<sup>IN</sup></div>
+            <a href="home.html"> <img src="logo.png" id="logo"><div id="title">iTube<sup>IN</sup></div></a>
             <div id="searchpad">
             <form>
             <input type="text" id="searching" name="searching" placeholder="Search" onkeyup="searchit()">
@@ -25,10 +60,33 @@
                 </div>
             </div>
             <div id="icon">
-            <i class="fas fa-video"></i>
-            <i class="fas fa-th"></i>
-                <i class="fas fa-bell"></i></div>
-        </header>
+                <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div id="login_section" onmouseout="login_change_after()" onmouseover="login_change()">
+                <a href="login.html" id="user_data"><img src="loginbox.png" id="login"><div id="user_name"></div></a>
+                
+                </div>
+        </header>-->
+            <ul id="login_change" onmouseover="login_change()" onmouseout="login_change_after()">
+                <a href=""><li>My Account</li></a>
+                <a href=""><li>Change Password</li></a>
+                <li style="cursor: pointer" onclick="getElementById('logout_box').style.display='block'">Logout</li>
+                </ul>
+            <div id="logout_box">
+            <form method="post" action="/logout">
+                <label>Are you Sure you want to logout ? </label>
+                
+                <br><br><button type="submit">Yes</button>
+                <button type="button" onclick="getElementById('logout_box').style.display='none'">No</button>
+                </form>
+            </div>
+            <div id="suggestion">
+                    <div id="search1"></div>
+                <div id="search2"></div>
+                <div id="search3"></div>
+            </div>
         <div id="sidebar">
         <Ul>
             <li style="background-color: #e9e9e9;color: black;"><i class="fas fa-home" class="side_icon" style="color: red;"></i>Home</li>
@@ -42,36 +100,28 @@
                 <h3>Comment</h3>
             <div id="comment"></div>
             <form id="form">
-                <input type="text" id="comment1" name="comment1" placeholder="Enter comment here" required><input type="submit" name="submit" onclick="comment_entry()" value="send">
+                <input type="text" id="comment1" name="comment1" placeholder="Enter comment here" required>
             </form>
+                <button name="submit" id="send" onclick="comment_entry()" >Send</button>
             <button id="edit" onclick="edit()">Edit</button>
             </div></div>
         <div id="side-video">
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 2</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
-            <div id="element">
-                <video src="media/strangerthings/strangerthings2.mkv" poster="media/strangerthings/poster1.jfif"></video><div id="name">Stranger Things 3</div></div>
+            <a href="video.html" onclick="set('1');"><div id="element1">
+                <video src="media/strangerthings/strangerthings1.mkv"
+                       poster="media/strangerthings/poster1.jfif" id="video1"></video><p id="name">Stranger Things</p></div></a>
+            <a href="video.html" onclick="set('2');"><div id="element2">
+                <video id="video2" src="media/strangerthings/strangerthings1.mkv"
+                       poster="media/strangerthings/poster1.jfif" ></video><p id="name">Stranger Things</p></div></a>
+            <a href="video.html" onclick="set('3');"><div id="element3">
+                <video id="video3"></video><p id="name"></p></div></a>
+            <a href="video.html" onclick="set('4');"><div id="element4">
+                <video id="video4"></video><p id="name"></p></div></a>
+            <a href="video.html" onclick="set('5');"><div id="element5">
+                <video id="video5"></video><p id="name"></p></div></a>
     </div>
         </div>
-        
+        </div>
         <script src="video.js"></script>
+        
     </body>
 </html>

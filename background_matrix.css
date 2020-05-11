@@ -1,0 +1,14 @@
+
+* {margin: 0; padding: 0;}
+#main {
+position: relative;
+}
+canvas {
+    background-color: #bbdefb ;
+    display: block;
+position: absolute;
+    z-index: -1;
+top: -10%;
+height: 110vh;
+width: 99.7%;
+}

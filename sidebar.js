@@ -39,3 +39,29 @@ function searchit(){
     document.getElementById("search"+i).innerHTML="No match";
         }
 }
+function loading(){
+    document.getElementById("load").style.display="block";
+    document.getElementById("afterload").style.display="none";
+    document.body.style.backgroundColor="#004d40";
+    document.getElementById("waves").style.display="block";
+    setTimeout(function(){document.getElementById("load").style.display="none";
+    document.getElementById("afterload").style.display="block";
+    document.getElementById("waves").style.display="none";},6000);
+    var re = new RegExp("username" + "=([^;]+)");
+    var username=re.exec(document.cookie);
+    if(username[1]!="")
+    {document.getElementById("login").src="loginavatar.png";
+       document.getElementById("user_name").innerHTML=username[1];
+    }
+    else
+        document.getElementById("login_change").style.display="none";
+}
+window.onload=loading();
+    function login_change(){
+       var str=document.getElementById("user_name").innerHTML; 
+    if(str!="")
+    document.getElementById("login_change").style.display="block";
+    }
+    function login_change_after(){
+        document.getElementById("login_change").style.display="none";
+    }

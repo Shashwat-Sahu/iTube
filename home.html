@@ -1,36 +1,94 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 <head>
         <link rel="stylesheet" type="text/css" href="fontawesome-free-5.12.0-web/css/all.css">
 <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="icon" href="logo.png">
     <link rel="stylesheet" type="text/css" href="header.css">
+    <link rel="stylesheet" type="text/css" href="background_matrix.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
      </head>
     <body>
-        <header>
+        <div id="load"></div>
+        <div id="waves">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <div class="bar4"></div>
+            <div class="bar5"></div>
+            <div class="bar6"></div>
+            <div class="bar7"></div>
+            <div class="bar8"></div>
+            <div class="bar9"></div>
+            <div class="bar10"></div>
+            <div class="bar11"></div>
+            <div class="bar12"></div>
+            <div class="bar13"></div>
+            <div class="bar14"></div>
+            <div class="bar15"></div>
+            <div class="bar16"></div>
+            <div class="bar17"></div>
+            <div class="bar18"></div>
+            <div class="bar19"></div>
+            <div class="bar20"></div>
+            <div class="bar21"></div>
+            <div class="bar22"></div>
+            <div class="bar23"></div>
+            <div class="bar24"></div>
+            <div class="bar25"></div>
+            <div class="bar26"></div>
+            <div class="bar27"></div>
+            <div class="bar28"></div>
+            <div class="bar29"></div>
+            <div class="bar30"></div>
+        </div>
+        <div id="afterload">
+            
+            <header>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             <button id="menu1" onclick="clickopen()"><i class="fas fa-bars"></i></button>
             <button id="menu" onclick="clickclose()"><i class="fas fa-bars"></i></button>
-            <a href="home.html"><img src="logo.png" id="logo"><div id="title">iTube<sup>IN</sup></div></a>
+            <a href="home.html"><img src="logo.png" id="logo" style="height:100;width: 100;"><div id="title">iTube<sup>IN</sup></div></a>
+                
             <div id="searchpad">
             <form>
             <input type="text" id="searching" name="searching" placeholder="Search" onkeyup="searchit()">
                 <button id="submit"><i class="fas fa-search"></i></button>
             </form>
-                <div id="suggestion">
+                
+            </div>
+            <div id="icon">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+            <div id="login_section" onmouseout="login_change_after()" onmouseover="login_change()">
+                <a href="login.html" id="user_data"><img src="loginbox.png" id="login"><div id="user_name"></div></a>
+                
+                </div>
+                
+        </header>
+            <ul id="login_change" onmouseover="login_change()" onmouseout="login_change_after()">
+                <a href="account.html"><li>Account Update</li></a>
+                <a href="passwordchange.html"><li>Change Password</li></a>
+                <li style="cursor: pointer" onclick="getElementById('logout_box').style.display='block'">Logout</li>
+                </ul>
+            <div id="logout_box">
+            <form method="post" action="/logout">
+                <label>Are you Sure you want to logout ? </label>
+                
+                <br><br><button type="submit">Yes</button>
+                <button type="button" onclick="getElementById('logout_box').style.display='none'">No</button>
+                </form>
+            </div>
+            <div id="suggestion">
                     <div id="search1"></div>
                 <div id="search2"></div>
                 <div id="search3"></div>
-                </div>
             </div>
-            <div id="icon">
-            <i class="fas fa-video"></i>
-            <i class="fas fa-th"></i>
-                <i class="fas fa-bell"></i></div>
-            
-        </header>
         <div id="sidebar">
             
         <Ul>
@@ -38,12 +96,8 @@
             <li><i class="fab fa-gripfire" class="side_icon"></i>Trending</li>
             </Ul>
         </div>
-        <div id="main"><h2>Recommended</h2>
+        <div id="main"><canvas id="c"></canvas><h2 style="color: white">Recommended</h2>
             <a href="video.html" onclick="set('1');"><div class="video">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
                 <video id="video1"></video><div id="video_footer"><img src="logo.png"><div id="name1"></div></div></div></a>
             <a href="video.html" onclick="set('2');"><div class="video"><video id="video2"></video><div id="video_footer"><img src="logo.png"><div id="name2"></div></div></div></a>
             <a href="video.html" onclick="set('3');"><div class="video"><video id="video3"></video><div id="video_footer"><img src="logo.png"><div id="name3"></div></div></div></a>
@@ -62,7 +116,10 @@
             <a href="video.html" onclick="set('16');"><div class="video"><video id="video16"></video><div id="video_footer"><img src="logo.png"><div id="name16"></div></div></div></a>
             <a href="video.html" onclick="set('17');"><div class="video"><video id="video17"></video><div id="video_footer"><img src="logo.png"><div id="name17"></div></div></div></a>
         </div>
+        </div>
     </body>
-    <script src="random.js"></script>
     <script src="sidebar.js"></script>
+    <script src="random.js"></script>
+    <script src="matrix.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 </html>
